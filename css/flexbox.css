@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+}
+
+/* header styles */
+
+header {
+  background-color: palegoldenrod;
+}
+
+header .container {
+  display: flex;
+  background-color: rebeccapurple;
+  padding: 0 15px;
+}
+
+.header__logo {
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+
+.nav__list {
+  display: flex;
+}
+
+.nav__list li {
+  list-style: none;
+  margin-left: 0;
+  padding: 8px 10px;
+}
+
+.nav__list li:hover {
+  list-style: none;
+  margin-left: 0;
+  padding: 8px 10px;
+  background-color: cadetblue;
+}
+
+.nav__list li a {
+  text-decoration: none;
+  color: lightblue;
+}
+
+.nav__list li a:hover {
+  color: white;
+}
+
+.main {
+  background-color: palegoldenrod;
+}
+
+.main .container {
+  display: flex;
+  background: beige;
+}
+
+.elements {
+  width: 25%;
+  justify-content: center;
+  align-items: center;
+}
+
+.elements div {
+  padding: 50px;
+  background-color: teal;
+  color: aliceblue;
+}
+
+.main-content {
+  text-align: center;
+}
+
+/* header styles */
+
+.footer {
+  background-color: palegoldenrod;
+  font-weight: bold;
+  color: wheat;
+  border-top: 5px wheat solid;
+  border-bottom: 5px wheat solid;
+}
+
+.footer .container {
+  padding: 20px 25px;
+  background-color: cadetblue;
+}
+
+.about {
+  text-align: center;
+}
