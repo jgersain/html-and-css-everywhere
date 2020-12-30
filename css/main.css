@@ -1,5 +1,7 @@
 .main-nav {
   background: #13a4a4;
+  padding-left: 0;
+  list-style: none;
 }
 
 .main-nav__item {
@@ -18,10 +20,6 @@
 
 .main-nav__item a:active {
   color: lightblue;
-}
-
-.main-nav__item a:after {
-  content: '|';
 }
 
 .center {
