@@ -4,13 +4,20 @@
   padding: 0;
 }
 
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
 header {
+  height: 5%;
   background-color: peachpuff;
 }
 
 nav {
   position: absolute;
   right: 0;
+  top: 2px;
 }
 
 .nav__list {
@@ -30,12 +37,37 @@ nav {
   color: darkblue;
 }
 
-main {
-  background-color: aliceblue;
-  width: 100%;
+.main {
+  height: 88%;
+  background-color: lightblue;
+}
+
+.menu {
+  display: inline-block;
+  height: 100%;
+  width: 25%;
+  padding: 25px;
+  background-color: gainsboro;
+}
+
+.menu__card {
+  text-align: center;
+  height: 20%;
+  display: block;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: white;
+  margin-bottom: 5px;
+}
+
+.content {
+  display: inline-block;
+  padding: 10px;
+  position: absolute;
 }
 
 .footer {
+  height: 7%;
   text-align: center;
   padding: 20px;
   background-color: lightcoral;
