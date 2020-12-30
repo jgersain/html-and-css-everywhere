@@ -1,0 +1,12 @@
+main {
+  height: 100vh;
+  width: 100vw;
+  background-color: lightblue;
+}
+
+.hero {
+  width: 80%;
+  height: 600px;
+  margin: 0 auto;
+  background-color: lightgoldenrodyellow;
+}
