@@ -19,21 +19,14 @@ html {
 .c4,
 .c5,
 .c6,
-.c7,
-.c8 {
-  width: 100%;
-  height: 150px;
-  min-width: 150px;
-}
-
-.c6 {
-  height: auto;
-}
-
-.link {
+.c7 {
   font-size: 3rem;
   font-family: 'Courier New', Courier, monospace;
   font-weight: bold;
+  display: flex;
+  width: 100%;
+  height: 150px;
+  min-width: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,7 +45,7 @@ html {
 }
 
 .c3 {
-  background-color: peru;
+  background-color: darkred;
 }
 
 .c4 {
@@ -63,41 +56,16 @@ html {
   background-color: darkgrey;
 }
 
-.c7 {
-  background-color: peachpuff;
+.c6 {
+  background-color: thistle;
 }
 
-.c8 {
+.c7 {
   background-color: aliceblue;
 }
 
 @media (min-width: 600px) {
-  .c1 {
-    width: 25%;
-  }
-
-  .c6 {
-    width: 75%;
-  }
 }
 
 @media (min-width: 800px) {
-  .container {
-    width: 800px;
-    margin: 0 auto;
-  }
-
-  .c1 {
-    width: 50%;
-    order: 1;
-  }
-
-  .c6 {
-    width: 100%;
-  }
-
-  .c7 {
-    width: 50%;
-    order: 2;
-  }
 }
