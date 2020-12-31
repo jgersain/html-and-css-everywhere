@@ -125,3 +125,29 @@ p {
 
 - Posiciòn por default
 - No es posible utilizar `top`, `right`, `left`, `button`
+
+### Variables
+
+Se declaran dentro de root
+
+```CSS
+/* definición */
+:root {
+  --primary-color: #003376;
+  --secundary-color: #003376;
+}
+
+/* llamada */
+header: {
+  background-color: var(--primary-color);
+}
+```
+
+### Fuentes
+
+- Para mejorar el performance, importar las fuentes destro de la etiqueta `head`, evitar hacerlo dentro del archivo CSS dedicado
+- Solo cargar una fuente por proyecto
+
+### Patrones de maquetación Responsive Design
+
+- Mostly Fluid
