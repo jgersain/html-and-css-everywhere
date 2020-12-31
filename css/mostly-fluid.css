@@ -17,7 +17,8 @@ html {
 .c2,
 .c3,
 .c4,
-.c5 {
+.c5,
+.c6 {
   font-size: 3rem;
   font-family: 'Courier New', Courier, monospace;
   font-weight: bold;
@@ -52,6 +53,10 @@ html {
 
 .c5 {
   background-color: darkgrey;
+}
+
+.c6 {
+  background-color: thistle;
 }
 
 /* @media (min-width: 600px) {
