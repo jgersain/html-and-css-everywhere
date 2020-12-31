@@ -1,6 +1,6 @@
-# Responsive BulmaCSS
+# HTML and CSS everywhere...
 
-Create a responsive blog using bulma css
+A responsive html page using css, flex, bulmacss
 
 #### For debug css use
 
@@ -45,8 +45,12 @@ Select con buscador
 
 NOTA: El tamaño promedio de una imágen debe de ser de 70kb, para ello hay herramientas que las optimizan:
 
-- Tiny PNG (Mejora el tamaño de las imágenes)
-- Verexif (Retira metadatos de las imágenes)
+- Descargar imagenes en diferentes tamaños
+  - [Pexels 👈](https://www.pexels.com/)
+- Optimizar y mejorar el tamaño de la imágenes
+  - [TinyPNG 👈](https://tinypng.com/)
+- Retirar metadatos de las imágenes para reducir tamaño
+  - [Verefix 👈](https://www.verexif.com/)
 
 ### CSS
 
@@ -62,6 +66,7 @@ NOTA: El tamaño promedio de una imágen debe de ser de 70kb, para ello hay herr
   - Ids
   - Clases
   - Tags
+- Orden correcto de declaración de CSS: Importancia, especificidad y orden de las fuentes
 
 > NOTA: Los selectores combinados tienen mayor peso, por ejemplo dos clases en un mismo elemento sobreescriben a una clase con una etiqueta html
 
@@ -98,6 +103,14 @@ div p {
   color: red;
 }
 ```
+
+> Pseudo clases
+
+Ddefinen el estilo de un estado especial de un elemento
+
+> Pseudo elementos
+
+Definen el estilo de una parte especifica de un elemento
 
 ### Trick medidas REM
 
@@ -150,4 +163,50 @@ header: {
 
 ### Patrones de maquetación Responsive Design
 
+(MyDevice.io 👈)[https://www.mydevice.io/]
+
 - Mostly Fluid
+- Layout shifter
+- Column drop
+
+### Mobile first / Only
+
+- breakpoint
+
+```CSS
+@media (min-width: 600px) {
+  ...
+}
+```
+
+- Es buena practica crear un archivo de `css` dedicado para estilos base (mobile), tableta o desktop
+
+```HTML
+<link rel="stylesheet" href="./css/mostly-fluid.css">
+<link rel="stylesheet" href="./css/mostly-fluid-tablet.css" media="screen and (min-width: 600px)">
+<link rel="stylesheet" href="./css/mostly-fluid-desktop.css" media="screen and (min-width: 800px)">
+```
+
+### Imagenes responsivas
+
+- Utilizar html semantico, con la etiqueta `picture`
+- Cargar imagenes diferentes dependiendo de la resución, con los media queries
+- Utilizar la propiedad `width` con 100% siempre que se quiera redimensionar la imágen al tamaño de su contenedor padre
+
+```HTML
+<section>
+  <picture>
+    <source srcset="./images/cat-big.jpg" media="(min-width:1200px)">
+    <source srcset="./images/cat-medium.jpg" media="(min-width:800px)">
+    <img class="cat" src="./images/cat-small.jpg" alt="Este es un gato feliz">
+  </picture>
+</section>
+```
+
+```CSS
+.cat {
+  width: 100%;
+}
+```
+
+[Resumen definitivo 👈](https://www.notion.so/Curso-definitivo-de-HTML-y-CSS-7196d473c6b046d2b8de4a0edaa82dc6)
